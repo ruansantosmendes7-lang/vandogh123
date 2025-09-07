@@ -41,13 +41,13 @@
     <!-- Header -->
     <header class="bg-black/80 backdrop-blur-sm shadow-md sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center space-x-4">
+            <a href="index.html" class="flex items-center space-x-4">
                 <img src="https://i.imgur.com/s6eFny4_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Logo Cervejaria Vandogh" class="h-16 w-auto invert">
                 <span class="text-2xl font-bold text-white" style="font-family: 'Lora', serif;">Cervejaria Vandogh</span>
             </a>
             <div class="hidden md:flex space-x-6">
                 <a href="#chopes" class="text-gray-300 hover:text-white transition">Chopp</a>
-                <a href="#longnecks" class="text-gray-300 hover:text-white transition">Longnecks</a>
+                <a href="longnecks.html" class="text-gray-300 hover:text-white transition">Longnecks</a>
                 <a href="#como-funciona" class="text-gray-300 hover:text-white transition">Como Funciona</a>
                 <a href="#contato" class="text-gray-300 hover:text-white transition">Contato</a>
             </div>
@@ -159,5 +159,174 @@
                                 <h3 class="text-2xl font-bold mb-2 card-title text-white">Chopp Hop Lager</h3>
                                 <p class="text-gray-300 mb-4">Uma Lager refrescante com um toque extra de lúpulo, trazendo aromas cítricos e florais.</p>
                                  <div class="text-sm text-gray-400 mb-4">
-                                    <p><span class="font-bold text-gray-300">Estilo
+                                    <p><span class="font-bold text-gray-300">Estilo:</span> Hop Lager</p>
+                                    <p><span class="font-bold text-gray-300">Harmoniza com:</span> Frango grelhado, saladas, comida asiática.</p>
+                                    <p><span class="font-bold text-gray-300">ABV:</span> 5.2% | <span class="font-bold text-gray-300">IBU:</span> 18</p>
+                                </div>
+                                <div class="my-4">
+                                    <h4 class="text-lg font-bold text-white mb-2">Preços (Barril + Chopeira):</h4>
+                                    <p class="text-gray-300"><span class="font-bold">30 Litros:</span> R$ 540,00</p>
+                                    <p class="text-gray-300"><span class="font-bold">50 Litros:</span> R$ 840,00</p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/556598006404?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Chopp%20Hop%20Lager." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-white text-black font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition mt-4">Pedir no WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Harmonização Inteligente com Gemini -->
+        <section id="harmonizacao" class="py-20 bg-gray-900">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title mb-4 text-white">Não sabe qual chopp escolher?</h2>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Diga-nos o que vai comer e o nosso sommelier com IA sugere a harmonização perfeita!</p>
+                <div class="max-w-xl mx-auto">
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <input id="food-input" type="text" placeholder="Ex: Pizza, Churrasco, Sushi..." class="w-full bg-gray-800 border border-gray-700 text-white rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white">
+                        <button id="gemini-button" class="bg-white text-black font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition whitespace-nowrap flex items-center justify-center">
+                            ✨ Sugerir Harmonização
+                        </button>
+                    </div>
+                    <!-- Área de Resultado -->
+                    <div id="loading-spinner" class="mt-8 hidden">
+                        <svg class="animate-spin h-8 w-8 text-white mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                    </div>
+                    <div id="gemini-result" class="mt-8 bg-gray-800 border border-gray-700 rounded-lg p-6 text-left hidden">
+                        <p id="result-text" class="text-gray-300"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action / Contato -->
+        <section id="contato" class="bg-black text-white">
+            <div class="container mx-auto px-6 py-20 text-center">
+                 <h2 class="section-title mb-4">Pronto para dar o próximo passo?</h2>
+                 <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Se tiver qualquer dúvida ou quiser uma ajuda para escolher o chopp ideal para seu evento, é só chamar a gente no WhatsApp. Será um prazer ajudar!</p>
+                 <!-- Número de WhatsApp atualizado -->
+                 <a href="https://wa.me/556598006404" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white font-bold py-4 px-10 rounded-full text-lg hover:bg-green-600 transition transform hover:scale-105 inline-flex items-center">
+                    <svg class="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.908 6.161l-1.317 4.814 4.905-1.295zm-1.011-5.315L4.473 14.12l-1.397.368 1.439 4.225.385-1.424 1.265-.415.42-1.23zm7.844-3.551c-.139-.244-.277-.25-.412-.254-.122-.004-.277-.005-.432-.005-.155 0-.405.061-.612.308-.207.247-.784.767-.784 1.855s.799 2.147.912 2.311c.112.164.155.26.24.413.25.424.394.55.65.738.5.36 1.01.552 1.592.716.712.192 1.13.164 1.488-.083.397-.27.65-.737.767-1.432.117-.694.057-1.29-.018-1.411-.075-.121-.154-.192-.308-.347-.154-.154-.423-.43-.57-.527-.24-.158-.48-.24-.65-.412-.17-.172-.25-.26-.11-.53z"></path></svg>
+                    Chamar no WhatsApp
+                 </a>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-black">
+        <div class="container mx-auto px-6 py-8 text-center border-t border-gray-700">
+             <!-- Ícone do Cachorrinho (Logo) no Rodapé -->
+            <div class="flex justify-center mb-4">
+                <img src="https://i.imgur.com/s6eFny4_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Logo Cervejaria Vandogh" class="h-16 w-auto invert">
+            </div>
+            <p>&copy; 2025 Cervejaria Vandogh. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-1">CNPJ: 33.421.260/0001-90</p>
+            <div class="mt-4 flex justify-center items-center space-x-6">
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/556598006404" target="_blank" rel="noopener noreferrer" class="text-sm text-green-400 hover:text-green-300 transition inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.908 6.161l-1.317 4.814 4.905-1.295zm-1.011-5.315L4.473 14.12l-1.397.368 1.439 4.225.385-1.424 1.265-.415.42-1.23zm7.844-3.551c-.139-.244-.277-.25-.412-.254-.122-.004-.277-.005-.432-.005-.155 0-.405.061-.612.308-.207.247-.784.767-.784 1.855s.799 2.147.912 2.311c.112.164.155.26.24.413.25.424.394.55.65.738.5.36 1.01.552 1.592.716.712.192 1.13.164 1.488-.083.397-.27.65-.737.767-1.432.117-.694.057-1.29-.018-1.411-.075-.121-.154-.192-.308-.347-.154-.154-.423-.43-.57-.527-.24-.158-.48-.24-.65-.412-.17-.172-.25-.26-.11-.53z"></path></svg>
+                    <span>(65) 9800-6404</span>
+                </a>
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/cervejariavandogh" target="_blank" rel="noopener noreferrer" class="text-sm text-pink-400 hover:text-pink-300 transition inline-flex items-center">
+                   <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427C2.013 15.093 2 14.74 2 12s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.48 2.525c.636-.247 1.363-.416 2.427-.465C8.93 2.013 9.284 2 12.315 2zM12 7.044c-2.749 0-4.965 2.216-4.965 4.956s2.216 4.956 4.965 4.956 4.965-2.216 4.965-4.956S14.75 7.044 12 7.044zm0 8.058c-1.724 0-3.11-.1388-3.11-3.102s1.386-3.102 3.11-3.102 3.11 1.388 3.11 3.102-.1386 3.102-3.11 3.102zm5.15-8.86a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" clip-rule="evenodd" /></svg>
+                    <span>@cervejariavandogh</span>
+                </a>
+            </div>
+            <p class="text-sm text-gray-400 mt-2">Beba com moderação. Se beber, não dirija. Produto para maiores de 18 anos.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                // Only prevent default if href is not just "#"
+                if (href && href.length > 1) {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(href);
+                    // Scroll only if target element exists
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Gemini API Logic
+        const foodInput = document.getElementById('food-input');
+        const geminiButton = document.getElementById('gemini-button');
+        const geminiResult = document.getElementById('gemini-result');
+        const resultText = document.getElementById('result-text');
+        const loadingSpinner = document.getElementById('loading-spinner');
+
+        geminiButton.addEventListener('click', async () => {
+            const food = foodInput.value;
+            if (!food.trim()) {
+                // Mensagem de erro melhorada, sem usar alert()
+                resultText.textContent = 'Por favor, diga-nos o que vai comer para que possamos sugerir uma harmonização.';
+                geminiResult.classList.remove('hidden');
+                return;
+            }
+
+            loadingSpinner.classList.remove('hidden');
+            geminiResult.classList.add('hidden');
+            resultText.textContent = '';
+
+            // Chave da API Gemini inserida
+            const apiKey = "AIzaSyCnEs0EYZX-X4kuvhaJOt3sVHdOzZCaoQ0"; 
+            const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+            const systemPrompt = "Você é um sommelier de cervejas especialista da Cervejaria Vandogh. Seu trabalho é recomendar, de forma amigável e direta, o melhor chopp da casa para harmonizar com a comida que o cliente vai consumir. As opções de chopp são: Pilsen Clássico (leve e refrescante, ótima para pratos leves como peixes e saladas), IPA Dourada (amarga e cítrica, ideal para comidas gordurosas e picantes como hambúrgueres e comida mexicana) e Hop Lager (refrescante com um toque de lúpulo, versátil, ótima com frango e comida asiática). A sua resposta deve ser um parágrafo curto e convincente, recomendando APENAS UMA das três cervejas e explicando o porquê da escolha de forma simples e convidativa.";
+            
+            const userQuery = `Qual chopp da Cervejaria Vandogh harmoniza melhor com ${food}?`;
+
+            const payload = {
+                contents: [{ parts: [{ text: userQuery }] }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                },
+            };
+
+            try {
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API Error: ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                const candidate = result.candidates?.[0];
+
+                if (candidate && candidate.content?.parts?.[0]?.text) {
+                    const text = candidate.content.parts[0].text;
+                    resultText.textContent = text;
+                    geminiResult.classList.remove('hidden');
+                } else {
+                    throw new Error("Não foi possível obter uma sugestão. Tente novamente.");
+                }
+
+            } catch (error) {
+                console.error('Error fetching Gemini response:', error);
+                resultText.textContent = 'Ocorreu um erro ao buscar a sugestão. Por favor, tente novamente mais tarde.';
+                geminiResult.classList.remove('hidden');
+            } finally {
+                loadingSpinner.classList.add('hidden');
+            }
+        });
+    </script>
+
+</body>
+</html>
 
