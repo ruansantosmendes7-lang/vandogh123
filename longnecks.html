@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Longnecks - Cervejaria Vandogh</title>
+    <link rel="icon" href="https://i.imgur.com/s6eFny4_d.png?maxwidth=520&shape=thumb&fidelity=high">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title, .card-title {
+            font-family: 'Lora', serif;
+        }
+        .section-title {
+            font-weight: 700;
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+        }
+        .card-hover {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(255 255 255 / 0.1), 0 8px 10px -6px rgb(255 255 255 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- Header -->
+    <header class="bg-black/80 backdrop-blur-sm shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-4">
+                <img src="https://i.imgur.com/s6eFny4_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Logo Cervejaria Vandogh" class="h-16 w-auto invert">
+                <span class="text-2xl font-bold text-white" style="font-family: 'Lora', serif;">Cervejaria Vandogh</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html#chopes" class="text-gray-300 hover:text-white transition">Chopp</a>
+                <a href="longnecks.html" class="text-gray-300 hover:text-white transition">Longnecks</a>
+                <a href="index.html#como-funciona" class="text-gray-300 hover:text-white transition">Como Funciona</a>
+                <a href="index.html#contato" class="text-gray-300 hover:text-white transition">Contato</a>
+            </div>
+            <!-- Número de WhatsApp atualizado -->
+            <a href="https://wa.me/556598006404" target="_blank" rel="noopener noreferrer" class="bg-green-500 text-white font-bold py-2 px-4 rounded-full hover:bg-green-600 transition hidden md:flex items-center">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.908 6.161l-1.317 4.814 4.905-1.295zm-1.011-5.315L4.473 14.12l-1.397.368 1.439 4.225.385-1.424 1.265-.415.42-1.23zm7.844-3.551c-.139-.244-.277-.25-.412-.254-.122-.004-.277-.005-.432-.005-.155 0-.405.061-.612.308-.207.247-.784.767-.784 1.855s.799 2.147.912 2.311c.112.164.155.26.24.413.25.424.394.55.65.738.5.36 1.01.552 1.592.716.712.192 1.13.164 1.488-.083.397-.27.65-.737.767-1.432.117-.694.057-1.29-.018-1.411-.075-.121-.154-.192-.308-.347-.154-.154-.423-.43-.57-.527-.24-.158-.48-.24-.65-.412-.17-.172-.25-.26-.11-.53z"></path></svg>
+                Peça no Zap
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Longnecks / Garrafas -->
+        <section id="longnecks" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="section-title text-center mb-4 text-white">Nossas Longnecks</h2>
+                <p class="text-gray-300 mb-12 text-center max-w-2xl mx-auto">Leve o sabor Vandogh para casa na garrafa. Perfeitas para qualquer momento.</p>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Longneck 1: Pilsen -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden card-hover border border-gray-700 flex flex-col">
+                        <img src="https://i.imgur.com/tl2cW6W_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Garrafa de Pilsen" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 card-title text-white">Pilsen Clássico</h3>
+                                <p class="text-gray-300 mb-4">A mesma receita leve e refrescante do nosso chopp, agora na sua geladeira.</p>
+                                <div class="my-4">
+                                    <h4 class="text-lg font-bold text-white mb-2">Preços:</h4>
+                                    <p class="text-gray-300"><span class="font-bold">Unidade (355ml):</span> R$ 12,00</p>
+                                    <p class="text-gray-300"><span class="font-bold">Pack com 6:</span> R$ 65,00</p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/556598006404?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Longneck%20Pilsen." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-white text-black font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition mt-4">Pedir no WhatsApp</a>
+                        </div>
+                    </div>
+                    <!-- Longneck 2: IPA -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden card-hover border border-gray-700 flex flex-col">
+                        <img src="https://i.imgur.com/QibB0yv_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Garrafa de IPA" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                           <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 card-title text-white">IPA Dourada</h3>
+                                <p class="text-gray-300 mb-4">Todo o poder do lúpulo da nossa IPA na praticidade da garrafa.</p>
+                                <div class="my-4">
+                                    <h4 class="text-lg font-bold text-white mb-2">Preços:</h4>
+                                    <p class="text-gray-300"><span class="font-bold">Unidade (355ml):</span> R$ 15,00</p>
+                                    <p class="text-gray-300"><span class="font-bold">Pack com 6:</span> R$ 85,00</p>
+                                </div>
+                           </div>
+                            <a href="https://wa.me/556598006404?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Longneck%20IPA." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-white text-black font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition mt-4">Pedir no WhatsApp</a>
+                        </div>
+                    </div>
+                    <!-- Longneck 3: Hop Lager -->
+                    <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden card-hover border border-gray-700 flex flex-col">
+                        <img src="https://i.imgur.com/tkx21pg_d.jpeg?maxwidth=520&shape=thumb&fidelity=high" alt="Garrafa de Hop Lager" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 card-title text-white">Hop Lager</h3>
+                                <p class="text-gray-300 mb-4">Refrescância e lúpulo na medida certa, pronta para qualquer hora.</p>
+                                <div class="my-4">
+                                    <h4 class="text-lg font-bold text-white mb-2">Preços:</h4>
+                                    <p class="text-gray-300"><span class="font-bold">Unidade (355ml):</span> R$ 14,00</p>
+                                    <p class="text-gray-300"><span class="font-bold">Pack com 6:</span> R$ 78,00</p>
+                                </div>
+                            </div>
+                            <a href="https://wa.me/556598006404?text=Ol%C3%A1%21%20Tenho%20interesse%20na%20Longneck%20Hop%20Lager." target="_blank" rel="noopener noreferrer" class="block w-full text-center bg-white text-black font-bold py-3 px-6 rounded-lg hover:bg-gray-200 transition mt-4">Pedir no WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-black">
+        <div class="container mx-auto px-6 py-8 text-center border-t border-gray-700">
+             <!-- Ícone do Cachorrinho (Logo) no Rodapé -->
+            <div class="flex justify-center mb-4">
+                <img src="https://i.imgur.com/s6eFny4_d.png?maxwidth=520&shape=thumb&fidelity=high" alt="Logo Cervejaria Vandogh" class="h-16 w-auto invert">
+            </div>
+            <p>&copy; 2025 Cervejaria Vandogh. Todos os direitos reservados.</p>
+            <p class="text-sm text-gray-400 mt-1">CNPJ: 33.421.260/0001-90</p>
+            <div class="mt-4 flex justify-center items-center space-x-6">
+                <!-- WhatsApp Link -->
+                <a href="https://wa.me/556598006404" target="_blank" rel="noopener noreferrer" class="text-sm text-green-400 hover:text-green-300 transition inline-flex items-center">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.908 6.161l-1.317 4.814 4.905-1.295zm-1.011-5.315L4.473 14.12l-1.397.368 1.439 4.225.385-1.424 1.265-.415.42-1.23zm7.844-3.551c-.139-.244-.277-.25-.412-.254-.122-.004-.277-.005-.432-.005-.155 0-.405.061-.612.308-.207.247-.784.767-.784 1.855s.799 2.147.912 2.311c.112.164.155.26.24.413.25.424.394.55.65.738.5.36 1.01.552 1.592.716.712.192 1.13.164 1.488-.083.397-.27.65-.737.767-1.432.117-.694.057-1.29-.018-1.411-.075-.121-.154-.192-.308-.347-.154-.154-.423-.43-.57-.527-.24-.158-.48-.24-.65-.412-.17-.172-.25-.26-.11-.53z"></path></svg>
+                    <span>(65) 9800-6404</span>
+                </a>
+                <!-- Instagram Link -->
+                <a href="https://www.instagram.com/cervejariavandogh" target="_blank" rel="noopener noreferrer" class="text-sm text-pink-400 hover:text-pink-300 transition inline-flex items-center">
+                   <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427C2.013 15.093 2 14.74 2 12s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.48 2.525c.636-.247 1.363-.416 2.427-.465C8.93 2.013 9.284 2 12.315 2zM12 7.044c-2.749 0-4.965 2.216-4.965 4.956s2.216 4.956 4.965 4.956 4.965-2.216 4.965-4.956S14.75 7.044 12 7.044zm0 8.058c-1.724 0-3.11-.1388-3.11-3.102s1.386-3.102 3.11-3.102 3.11 1.388 3.11 3.102-.1386 3.102-3.11 3.102zm5.15-8.86a1.2 1.2 0 100-2.4 1.2 1.2 0 000 2.4z" clip-rule="evenodd" /></svg>
+                    <span>@cervejariavandogh</span>
+                </a>
+            </div>
+            <p class="text-sm text-gray-400 mt-2">Beba com moderação. Se beber, não dirija. Produto para maiores de 18 anos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
