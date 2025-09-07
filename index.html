@@ -257,7 +257,9 @@
         geminiButton.addEventListener('click', async () => {
             const food = foodInput.value;
             if (!food.trim()) {
-                alert('Por favor, diga-nos o que vai comer.');
+                // Mensagem de erro melhorada, sem usar alert()
+                resultText.textContent = 'Por favor, diga-nos o que vai comer para que possamos sugerir uma harmonização.';
+                geminiResult.classList.remove('hidden');
                 return;
             }
 
@@ -265,7 +267,8 @@
             geminiResult.classList.add('hidden');
             resultText.textContent = '';
 
-            const apiKey = ""; // Esta chave será fornecida pelo ambiente de execução
+            // Chave da API Gemini inserida
+            const apiKey = "AIzaSyCnEs0EYZX-X4kuvhaJOt3sVHdOzZCaoQ0"; 
             const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
 
             const systemPrompt = "Você é um sommelier de cervejas especialista da Cervejaria Vandogh. Seu trabalho é recomendar, de forma amigável e direta, o melhor chopp da casa para harmonizar com a comida que o cliente vai consumir. As opções de chopp são: Pilsen Clássico (leve e refrescante, ótima para pratos leves como peixes e saladas), IPA Dourada (amarga e cítrica, ideal para comidas gordurosas e picantes como hambúrgueres e comida mexicana) e Hop Lager (refrescante com um toque de lúpulo, versátil, ótima com frango e comida asiática). A sua resposta deve ser um parágrafo curto e convincente, recomendando APENAS UMA das três cervejas e explicando o porquê da escolha de forma simples e convidativa.";
@@ -313,4 +316,6 @@
 
 </body>
 </html>
+
+
 
